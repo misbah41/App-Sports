@@ -1,14 +1,45 @@
-
 @import url(https://fonts.googleapis.com/css?family=Poppins:500);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
-
-.sportTitle{
+.sportTitle {
   color: rgb(0, 118, 228);
+  font-weight: 700;
 }
+
 .league-card {
   text-align: center;
   -webkit-box-shadow: 0px 8px 16px -1px rgba(0, 0, 0, 0.13);
   box-shadow: 0px 8px 16px -1px rgba(0, 0, 0, 0.13);
+  position: relative;
+  padding-top: 30px;
+  border-radius: 5px;
+}
+
+.league-card::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 50%;
+  border-top: 1px solid #e60f3a;
+  border-left: 1px solid #e60f3a;
+  z-index: -7;
+  border-top-left-radius: 5px;
+
+}
+
+.league-card::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  right: 0;
+  height: 50%;
+  width: 50%;
+  border-bottom: 1px solid #e60f3a;
+  border-right: 1px solid #e60f3a;
+  z-index: -7;
+  border-bottom-right-radius: 5px;
+
 }
 
 .btn-detail {
@@ -18,11 +49,11 @@
   color: #fff;
   margin: 20px auto;
   padding: 8px 22px;
-  border:none;
-  position:relative;
+  border: none;
+  position: relative;
 }
 
-.btn-detail> span {
+.btn-detail>span {
   background-color: #e60f3a;
   border-radius: 5px 0 0 5px;
   -webkit-transition: all 0.15s ease-in;
@@ -42,13 +73,12 @@
   -webkit-transition: all 0.15s ease-in;
   transition: all 0.15s ease-in;
 }
-.btn-detail:hover span,
-.btn-detail.hover span {
+
+.btn-detail:hover span, .btn-detail.hover span {
   background-color: #e60f3a;
 }
 
-.btn-detail:hover:after,
-.btn-detail.hover:after {
+.btn-detail:hover:after, .btn-detail.hover:after {
   margin-top: -5px;
   background-color: #e60f3a;
   box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.5);
