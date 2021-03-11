@@ -1,0 +1,55 @@
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:500);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+.sportTitle{
+  color: rgb(0, 118, 228);
+}
+.league-card {
+  text-align: center;
+  -webkit-box-shadow: 0px 8px 16px -1px rgba(0, 0, 0, 0.13);
+  box-shadow: 0px 8px 16px -1px rgba(0, 0, 0, 0.13);
+}
+
+.btn-detail {
+  width: 220px;
+  background-color: #e60f3a;
+  border-radius: 2px;
+  color: #fff;
+  margin: 20px auto;
+  padding: 8px 22px;
+  border:none;
+  position:relative;
+}
+
+.btn-detail> span {
+  background-color: #e60f3a;
+  border-radius: 5px 0 0 5px;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+}
+
+.btn-detail:after {
+  font-family: FontAwesome;
+  font-size: 20px;
+  content: "\f0da";
+  background-color: #e60f3a;
+  position: absolute;
+  right: 0%;
+  padding: 10px 20px;
+  top: -11.5%;
+  border-radius: 0 5px 5px 0;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+}
+.btn-detail:hover span,
+.btn-detail.hover span {
+  background-color: #e60f3a;
+}
+
+.btn-detail:hover:after,
+.btn-detail.hover:after {
+  margin-top: -5px;
+  background-color: #e60f3a;
+  box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.5);
+}
