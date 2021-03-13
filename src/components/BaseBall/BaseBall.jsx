@@ -5,7 +5,7 @@ import League from '../League/League';
 import './BaseBall.css';
 import baseBallBanner from './BaseBallBanner/baseball.jpg';
 
-
+//app start
 const BaseBall = () => {
   const [leagues, setLeagues] = useState([]);
 
