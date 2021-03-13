@@ -1,0 +1,85 @@
+.nav-menu {
+  /* background-color: #e60f3a; */
+  line-height: 44.5px;
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  padding-left: 70px;
+}
+
+.scrolled {
+  position: fixed;
+  background-color: #e60f3a;
+  z-index: 1000;
+  width: 100%;
+  padding-top: 10px;
+  transition: 0.5s;
+  -webkit-box-shadow: 1px 9px 12px 0px rgba(48, 48, 48, 0.37);
+  box-shadow: 1px 9px 12px 0px rgba(48, 48, 48, 0.37);
+  padding-left: 70px;
+}
+
+.scrolled .nav-text>a {
+  text-decoration: none;
+  padding: 17px 22px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.5s;
+}
+
+.nav-menu-items {
+  display: flex;
+  justify-content:start;
+}
+
+.nav-menu-items>.nav-text {
+  list-style-type: none;
+}
+
+.nav-text>a {
+  text-decoration: none;
+  padding: 15px 22px;
+  color: #048cdb;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.5s;
+}
+
+.scrolled .nav-text>a:hover {
+  background-color: #ad0527;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-text>a:hover {
+  text-decoration: none;
+  color: #ff0033;
+}
+
+.nav-text>a>span {
+  margin-top: 5px;
+}
+
+
+
+@media (min-width: 620px) and (max-width: 750px) {
+  .nav-menu, .scrolled {
+    padding-left: 15px;
+  }  
+}
+
+@media (min-width: 550px) and (max-width: 620px) {
+  .nav-menu, .scrolled {
+    padding-left: 0px;
+  }  
+  
+  .scrolled .nav-text>a, .nav-menu .nav-text>a {
+    padding: 17px 15px;
+  }
+}
+
+
+

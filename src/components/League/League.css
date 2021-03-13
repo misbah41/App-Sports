@@ -25,7 +25,6 @@
   border-left: 1px solid #e60f3a;
   z-index: -7;
   border-top-left-radius: 5px;
-
 }
 
 .league-card::after {
@@ -39,7 +38,6 @@
   border-right: 1px solid #e60f3a;
   z-index: -7;
   border-bottom-right-radius: 5px;
-
 }
 
 .btn-detail {
@@ -82,4 +80,11 @@
   margin-top: -5px;
   background-color: #e60f3a;
   box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 575px) and (max-width: 992px) {
+  .btn-detail {
+    width: 180px;
+    padding-right: 40px;
+  }
 }

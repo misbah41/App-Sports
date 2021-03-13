@@ -36,7 +36,7 @@ const LeagueDetail = () => {
 
   return (
     <>
-      <div className="container">
+      <div className="container crd-container">
         <div style={{ backgroundImage: `linear-gradient(0deg, rgb(126 126 126 / 56%), rgb(58 58 58 / 79%)),url(${strBanner})` }} className='card banner-card'>
           <img src={strBadge} alt="" />
         </div>
